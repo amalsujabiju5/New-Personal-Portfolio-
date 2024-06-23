@@ -90,7 +90,7 @@ export const projects = [
         image: netflix,
     },
     {
-        name: "Personal poertfolio",
+        name: "Personal portfolio",
         description:
             "Personal Portfolio prject showcasing my experience,skills,Projects and Contact infrormation.This project is made with React",
 
