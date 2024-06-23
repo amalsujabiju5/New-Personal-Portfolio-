@@ -85,7 +85,7 @@ export const projects = [
     },
     {
         name: "Personal Portfolio",
-        description: "Personal Portfolio project showcasing my experience, skills, projects, and contact information. This project is made with React.",
+        description: "Personal Portfolio project showcasing my experience,skills,projects,and contact information. This project is made with React.",
         image: portfolio,
     },
     {
