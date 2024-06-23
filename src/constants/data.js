@@ -76,12 +76,12 @@ export const projects = [
     {
         name: "Spotify Clone",
         description: "Spotify clone is an application that allows you to stream your favorite music and create playlists.",
-        image: Spotify,
+        image: spotify,
     },
     {
         name: "Netflix Clone",
         description: "Netflix clone is an application made with Flutter. It features previewing movies and detailed information fetched from the TMDB database.",
-        image: Netflix,
+        image: netflix,
     },
     {
         name: "Personal Portfolio",
