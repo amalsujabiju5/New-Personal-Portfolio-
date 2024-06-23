@@ -70,12 +70,12 @@ export const technologies = [
 export const projects = [
     {
         name: "YouTube Clone",
-        description: "YouTube clone is an application that allows you to watch your favorite videos and contents and search videos and shows.",
+        description: "YouTube clone is an application that allows you to watch your favourite videos and contents and search videos and shows.",
         image: youtube,
     },
     {
         name: "Spotify Clone",
-        description: "Spotify clone is an application that allows you to stream your favorite music and create playlists.",
+        description: "Spotify clone is an application that allows you to stream your favourite music and create playlists.",
         image: spotify,
     },
     {
