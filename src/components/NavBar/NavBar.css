@@ -1,0 +1,95 @@
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  min-height: 100vh;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  transition: transform 0.3s ease-in-out;
+}
+a:hover {
+  color: #ffba08;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 8vh;
+  background: transparent;
+  padding: 0 2rem;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+.brand {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.navItems {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.toggler div {
+  width: 3rem;
+  height: 0.2rem;
+  margin: 0.4rem;
+  background: darkgray;
+}
+.toggler {
+  cursor: pointer;
+  display: none;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  .toggler {
+    display: flex;
+  }
+  .navItems {
+    position: fixed;
+    top: 8vh;
+    right: 0;
+    width: 50%;
+    height: 60%;
+    background: rgba(143, 143, 143, 0.8);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(100%);
+    z-index: 9; /* Ensure it's above other content */
+  }
+  .navItems.active {
+    transform: translateX(0);
+  }
+  .nav_link {
+    margin: 20px 0;
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
+    transition: transform 0.3s ease-in-out;
+  }
+  a:hover {
+    color: #ffba08;
+  }
+}
+
+.nav .active {
+  padding-bottom: 2px;
+  border-bottom: 2px solid orange;
+}

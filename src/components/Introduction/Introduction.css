@@ -1,0 +1,168 @@
+body {
+  font-family: sans-serif;
+}
+
+.overview {
+  background-image: url("../../assets/bg.jpeg"); /* Path to your background image */
+  background-size: cover; /* Ensure the image covers the entire container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+
+  color: white; /* Default text color */
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.intro {
+  padding-top: 30px;
+  padding-left: 45px;
+}
+.intro h1 {
+  color: darkgray;
+  font-size: 5.1rem;
+}
+.overview h3 {
+  text-align: justify;
+  padding-top: 20px;
+  padding-left: 45px;
+  padding-right: 30px;
+  font-size: 2.1rem;
+  color: aliceblue;
+  overflow: hidden;
+}
+
+.buttons {
+  display: flex;
+  padding: 30px;
+  gap: 10px;
+
+  margin-top: 20px;
+}
+
+.buttons .btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: black;
+}
+.btn:hover {
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+.btn:active {
+  transform: scale(1); /* Reset size on click */
+}
+.btn:nth-child(1) {
+  background: linear-gradient(45deg, #3498db, #2980b9);
+}
+
+.btn:nth-child(2) {
+  background: linear-gradient(45deg, #ff79c6, #f28ac1);
+}
+.btn:nth-child(3) {
+  background: linear-gradient(45deg, #444, #8f8282);
+}
+
+.knowledge {
+  display: flex; /* Centers the content inside the container */
+  justify-content: center; /* Centers the content horizontally */
+  align-items: center; /* Centers the content vertically */
+  gap: 15px;
+  flex-wrap: wrap;
+  padding-right: 100px;
+  padding-top: 50px;
+  cursor: pointer;
+}
+.skills {
+  width: 300px;
+  height: 250px;
+  border: 1px solid #2bb8e3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+  padding-top: 30px;
+  padding-right: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.skills:hover {
+  transform: translateY(-10px); /* Slight upward movement on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.skills img {
+  width: 100px;
+  height: 100px;
+  perspective: 1000px;
+}
+.skills img:hover {
+  transform: rotateY(20deg) rotateX(10deg);
+}
+.skills:last-child .image img {
+  width: 40%;
+
+  height: auto;
+}
+.skills:nth-child(1) h2 {
+  color: #66d6c1;
+}
+.skills:nth-child(2) h2 {
+  color: #50d55d;
+}
+
+.skills:nth-child(3) h2 {
+  color: #ab922f;
+}
+.skills:nth-child(4) h2 {
+  color: #28af5c;
+}
+
+.image {
+  margin-bottom: 10px; /* Space below the image */
+}
+
+.knowledge h2 {
+  max-width: 100%; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 4px; /* Slightly rounded corners on the image */
+  animation: rotateSideways 10s linear infinite; /* Apply continuous sideways rotation */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  /* Adjust padding for smaller screens */
+  .overview {
+    padding: 10px;
+  }
+  .overview h3 {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: justify;
+    line-height: 1.6;
+
+    word-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+  }
+  /* Make skill cards stack in a single column */
+  .knowledge {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5px;
+  }
+
+  /* Adjust width and margin for skill cards */
+  .skills {
+    width: calc(100% - 40px);
+
+    margin-left: 65px;
+
+    padding-right: 20px;
+  }
+}

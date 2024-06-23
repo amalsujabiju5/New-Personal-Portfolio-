@@ -1,0 +1,104 @@
+/* Ensure the main container uses the full viewport height and allows scrolling if necessary */
+.main {
+  min-height: 100vh; /* Minimum height to ensure it covers the viewport */
+  background-image: url("../../assets/bg.jpeg"); /* Path to your background image */
+  background-size: cover; /* Ensure the image covers the entire container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  color: lightgray; /* Default text color */
+  display: flex;
+  flex-direction: column; /* Column layout for heading and timeline */
+  align-items: center; /* Center items horizontally */
+  padding: 20px; /* Add some padding for better spacing */
+  box-sizing: border-box; /* Include padding in element's total width and height */
+}
+
+/* Center the heading and add some margin for spacing */
+.heading {
+  text-align: center;
+  margin-bottom: 20px; /* Add margin to space out the heading from the timeline */
+}
+
+/* Highlight style for the span inside heading */
+.highlight {
+  font-size: 80px;
+  color: aqua;
+}
+
+/* Style the timeline container */
+.timeline {
+  width: 100%; /* Full width */
+  max-width: 800px; /* Maximum width to limit it on larger screens */
+  margin: 0 auto; /* Center the timeline */
+  position: relative;
+}
+
+/* Style each checkpoint */
+.checkpoint {
+  position: relative;
+  margin: 1em 0; /* Vertical margin between checkpoints */
+  padding: 1em 2em; /* Padding inside each checkpoint */
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  border: 2px solid #888; /* Border color */
+  border-radius: 1em; /* Rounded corners */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align items inside checkpoint */
+  width: 100%; /* Full width */
+}
+
+/* Connecting line for each checkpoint */
+.checkpoint:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -1em;
+  transform: translateX(-50%);
+  height: 1em;
+  width: 2px;
+  background-color: white; /* Small white line connecting checkpoints */
+}
+
+.checkpoint:first-child:before {
+  display: none; /* Hide the line for the first checkpoint */
+}
+
+/* Alternating alignment for odd and even checkpoints */
+.checkpoint:nth-child(odd) {
+  align-self: flex-start;
+}
+
+.checkpoint:nth-child(even) {
+  align-self: flex-end;
+}
+
+/* Additional padding inside checkpoint content */
+.checkpoint div {
+  padding: 1.5em;
+}
+
+/* Style for paragraph inside checkpoint */
+.checkpoint p {
+  line-height: 1.6;
+  color: #ccc;
+}
+
+/* Central connecting line in the timeline */
+.timeline:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: white; /* Central connecting line color */
+  transform: translateX(-50%);
+  z-index: -1; /* Place it behind other elements */
+}
+@media screen and (max-width: 768px) {
+  .heading h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+}
