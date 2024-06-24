@@ -29,7 +29,7 @@ export const intro = [
     },
     {
         title: "Introduction",
-        desc: "Amal is a seasoned computer science and software development professional with a college education and experience. With a solid academic foundation in computer science and a passion for problem-solving, Amal is committed to delivering top-tier solutions to intricate challenges. His portfolio showcases a diverse range of projects and accomplishments, highlighting his dedication to excellence in every endeavor.",
+        desc: "I am a seasoned computer science and software development professional with a college education and experience. With a solid academic foundation in computer science and a passion for problem-solving, Amal is committed to delivering top-tier solutions to intricate challenges. His portfolio showcases a diverse range of projects and accomplishments, highlighting his dedication to excellence in every endeavor.",
     },
 ];
 
