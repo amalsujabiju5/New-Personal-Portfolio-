@@ -12,7 +12,7 @@ const Introduction = () => {
       <div className="buttons">
         <button className="btn">
           <a
-            href="https://github.com/amalsujabiju5/Resume/blob/main/AmalSBiju%20.pdf"
+            href="https://github.com/amalsujabiju5/amalResume"
             className="btn-link"
           >
             Resume
